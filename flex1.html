@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: lightgray;
+            border: 1px solid black;
+            max-width: 500px;
+            height: 600px;
+            /* acompanha o tamanho da tela se diminuir, quando aumenta, fica com o 600px mesmo */
+            
+            display: flex;
+            
+            /* flex-direction: column; */
+            /* row, row-reverse, column, column-reverse */
+            /* define a direção do eixo principal */
+            
+            /* flex-wrap: wrap-reverse; */
+            /* wrap: divide a linha ou a coluna
+               nowrap: nao divide
+                wrap-reverse: quebra a linha de baixo para cima, quebra a coluna da direita para a esquerda*/
+            
+            flex-flow: row wrap;
+            /* define o flex-drection e flax-wrap */
+
+            justify-content: flex-end;
+            /* alinhamento dos conteudos no eixo pricipal: space-evenly, space-around, space-evenly 
+               flex-start, flex-end*/
+
+            align-items: flex-end;
+            /* alinmhamento do eixo nao principal */
+
+            align-content: space-around;
+            /* espaço entre os espaços */
+        }
+
+        .box{
+            width: 80px;
+            height: 80px;
+            background-color: brown;
+            border: 1px solid black;
+            }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+    </div>
+</body>
+</html>
